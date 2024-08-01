@@ -10,9 +10,13 @@
 
 
 
+
 <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
  <style>
-
+ .btn-join{background: linear-gradient(to right, #fdc830, #f37335); color:white; padding:15px 22px 12px 22px; color:white;border-radius:2.5rem;margin-top:9rem;}
+        .btn-join:hover{background: linear-gradient(to right, #fe8c00, #f83600);}
+        .mission-man{border:2px dotted red;padding: 1.6rem;border-radius:22px 0px;}
+        .mission-man:hover{background: linear-gradient(to right, #ffe259, #ffa751);border-radius:0px 32px;}
 
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700|Roboto:300,300i,400,400i,500,500i,700,700i,900,900i|Yantramanav:300,400,500,700,900');
 

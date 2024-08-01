@@ -18,10 +18,7 @@
     </script>
 
     <style>
-        .btn-join{background: linear-gradient(to right, #fdc830, #f37335); color:white; padding:15px 22px 12px 22px; color:white;border-radius:2.5rem;margin-top:9rem;}
-        .btn-join:hover{background: linear-gradient(to right, #fe8c00, #f83600);}
-        .mission-man{border:2px dotted red;padding: 1.6rem;border-radius:22px 0px;}
-        .mission-man:hover{background: linear-gradient(to right, #ffe259, #ffa751);border-radius:0px 32px;}
+       
         body{
             overflow-x: hidden;
         }
@@ -33,10 +30,10 @@
             z-index: 1;
         }
         .banner-1 {
-            left: 73rem;
+            left: 35rem;
             position: absolute;
             top: 0rem;
-            height: 33rem;
+            height: 28rem;
             animation: move 2.5s linear infinite;
         }
         @keyframes move {
@@ -138,7 +135,7 @@
             <div class="col-md-12" style="position: absolute; top:250px; left:162px;">
                 <p><img src="<?php echo base_url();?>uploads/faq-1.png" alt="" class="banner-1"></p>
                 <h1 class="wow zoomInLeft" style="color:#0be8ad;position:absolute;z-index:901;margin-left:-2rem;font-family: 'Roboto Slab', serif;"><b>Welcome To </h1><br><br><br>
-                <h1><span style="color:#ab1b00;position:absolute;left:-2rem;top:-4rem;z-index:901;"class="wow tada"><b> Asha Payal Foundation</b></span>
+                <h1><span style="color:white;position:absolute;left:-2rem;top:-4rem;z-index:1;"class="wow tada"><b> Asha Payal Foundation</b></span>
                 <p class="wow zoomInRight" style="font-size:1.5rem;position:absolute;left:-2rem;top:2rem;font-family:'Raleway', sans-serif;z-index:901;font-weight:600;">The Asha Payal Foundation supports the poor by <br>offering food, clothing, education, and healthcare,<br> aiming to uplift communities and create sustaina<br>ble development for a brighter, more equitable <br>future.</p>
                 </h1>
                 <!-- <p class="ani_l" style="position: absolute; color:#00375a; left:242px;z-index:901;"><b>ARYAMAN Group of Institutions is an educational conglomerate that is committed to providing high-quality</b><br> -->
@@ -183,8 +180,16 @@
                                 </button>
                             </a>
                         <?php endif; ?>
-                    </div><br>
-                    <p> ttttt</p>
+                    </div>
+
+                    <div class=""style="display:flex;">
+                     <p><span><i class="fa fa-bullseye"style="color:#ea9909;"></i>&nbsp;Charity For Education</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><i class="fa fa-bullseye"style="color:#ea9909;"></i>&nbsp;Feed for hungry child</span></p>
+                     </div>
+
+                     <div class=""style="display:flex;">
+                     <p><span><i class="fa fa-bullseye"style="color:#ea9909;"></i>&nbsp;Home for homeless</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><i class="fa fa-bullseye"style="color:#ea9909;"></i>&nbsp;Clean water for people</span></p>
+                     </div><br>
+
                     <p class="wow tada"><a href="" class="btn-join" style="color:white;padding:12px 22px 12px 22px;color:white;border:3px solid #ea9909;">JOIN WITH US</a></p>
 
                 </div>
@@ -200,223 +205,104 @@
 </section>
 
  <!--====================about us section end==================================================== -->
-<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
 
 
-<!-- &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&  -->
-
-  <!--Intro Section-->
-  <section class="subscribe-intro">
-            <div class="auto-container">
-                <div class="row clearfix">
-                    <!--Column-->
-                    <div class="column col-md-9 col-sm-12 col-xs-12">
-                        <h2>Subcribe for Newsletter</h2>
-                        There are many variations of passages of Lorem Ipsum available but the majority have
-                    </div>
-                    <!--Column-->
-                    <div class="column col-md-3 col-sm-12 col-xs-12">
-                        <div class="text-right padd-top-20">
-                            <a href="#" class="theme-btn btn-style-one">Subscribe Now</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-         <!--Mission Section start -->
-         <section class="main-features sec-padding61">
-            <div class="auto-container">
-
-                <div class="sec-title text-center">
-                    <h2>Our <span class="normal-font theme_color">Mission</span></h2>
-                    <div class="text">Lorem ipsum dolor sit amet, cum at inani interes setnisl omnium dolor amet amet qco modo cum text </div>
-                </div>
-
-                <div class="row clearfix">
-                
-
-                    <!--Default Icon Column-->
-                    <div class="default-icon-column col-lg-3 col-md-6 col-xs-12">
-                        <article class="inner-box text-center mission-man">
-                            <div class="icon-box center">
-                                <div class="icon"><span class="flaticon-illumination"></span></div>
-                            </div>
-                            <h3>Charity For Education</h3>
-                            <div class="text">Lorem ipsum dolor sit amet et siu amet amet audiam copiosaei mei purto dolor timeam mea </div>
-                        </article>
-                    </div>
-
-                    <!--Default Icon Column-->
-                    <div class="default-icon-column col-lg-3 col-md-6 col-xs-12">
-                        <article class="inner-box text-center mission-man">
-                            <div class="icon-box center">
-                                <div class="icon"><span class="flaticon-arrows-3"></span></div>
-                            </div>
-                            <h3>Feed for hungry child</h3>
-                            <div class="text">Lorem ipsum dolor sit amet et siu amet amet audiam copiosaei mei purto dolor timeam mea </div>
-                        </article>
-                    </div>
-
-                    <!--Default Icon Column-->
-                    <div class="default-icon-column col-lg-3 col-md-6 col-xs-12">
-                        <article class="inner-box text-center mission-man">
-                            <div class="icon-box center">
-                                <div class="icon"><span class="flaticon-nature-1"></span></div>
-                            </div>
-                            <h3>Home for homeless</h3>
-                            <div class="text">Lorem ipsum dolor sit amet et siu amet amet audiam copiosaei mei purto dolor timeam mea </div>
-                        </article>
-                    </div>
-
-                    <!--Default Icon Column-->
-                    <div class="default-icon-column col-lg-3 col-md-6 col-xs-12">
-                        <article class="inner-box text-center mission-man">
-                            <div class="icon-box center">
-                                <div class="icon"><span class="flaticon-summer-3"></span></div>
-                            </div>
-                            <h3>Clean water for people</h3>
-                            <div class="text">Lorem ipsum dolor sit amet et siu amet amet audiam copiosaei mei </div>
-                        </article>
-                    </div>
-
-                    <!--Default Icon Column-->
-                    <div class="default-icon-column col-lg-3 col-md-6 col-xs-12">
-                        <article class="inner-box text-center mission-man">
-                            <div class="icon-box center">
-                                <div class="icon"><span class="flaticon-technology-13"></span></div>
-                            </div>
-                            <h3>Charity For Education</h3>
-                            <div class="text">Lorem ipsum dolor sit amet et siu amet amet audiam copiosaei mei purto dolor timeam mea </div>
-                        </article>
-                    </div>
-
-                    <!--Default Icon Column-->
-                    <div class="default-icon-column col-lg-3 col-md-6 col-xs-12">
-                        <article class="inner-box text-center mission-man">
-                            <div class="icon-box center">
-                                <div class="icon"><span class="flaticon-summer"></span></div>
-                            </div>
-                            <h3>Feed for hungry child</h3>
-                            <div class="text">Lorem ipsum dolor sit amet et siu amet amet audiam copiosaei mei purto dolor timeam mea </div>
-                        </article>
-                    </div>
-
-                    <!--Default Icon Column-->
-                    <div class="default-icon-column col-lg-3 col-md-6 col-xs-12">
-                        <article class="inner-box text-center mission-man">
-                            <div class="icon-box center">
-                                <div class="icon"><span class="flaticon-nature-11"></span></div>
-                            </div>
-                            <h3>Home for homeless</h3>
-                            <div class="text">Lorem ipsum dolor sit amet et siu amet amet audiam copiosaei mei purto dolor timeam mea </div>
-                        </article>
-                    </div>
-
-                    <!--Default Icon Column-->
-                    <div class="default-icon-column col-lg-3 col-md-6 col-xs-12">
-                        <article class="inner-box text-center mission-man">
-                            <div class="icon-box center">
-                                <div class="icon"><span class="flaticon-dog"></span></div>
-                            </div>
-                            <h3>Clean water for people</h3>
-                            <div class="text">Lorem ipsum dolor sit amet et siu amet amet audiam copiosaei mei  </div>
-                        </article>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-        <!--Mission Section end -->
-
-            <!--Testimonials-->
-            <section class="testimonials-section bg-color-f5">
-            <div class="auto-container">
-
-                <div class="sec-title text-center">
-                    <h2 class="black_color">Testi<span class="normal-font theme_color">Monials</span></h2>
-                    <div class="text black_color">Lorem ipsum dolor sit amet, cum at inani interes setnisl omnium dolor amet amet qco modo cum text </div>
-                </div>
-
-                <!--Slider-->
-                <div class="testimonials-slider testimonials-carousel">
-
-                    <!--Slide-->
-                    <article class="slide-item">
-
-                        <div class="info-box">
-                            <figure class="image-box"><img src="<?php echo base_url();?>media/website_assets/images/resource/testi-image-1.jpg" alt=""></figure>
-                            <h3>Mark Pine</h3>
-                            <p class="designation">Rome, Italy</p>
-                        </div>
-
-                        <div class="slide-text">
-                            <p>“But I must explain to you the how all this mistaken idea of thealorem qco denouncing pleasure”</p>
-                        </div>
-                    </article>
-
-                    <!--Slide-->
-                    <article class="slide-item">
-
-                        <div class="info-box">
-                            <figure class="image-box"><img src="<?php echo base_url();?>media/website_assets/images/resource/testi-image-2.jpg" alt=""></figure>
-                            <h3>Mark Pine</h3>
-                            <p class="designation">Rome, Italy</p>
-                        </div>
-
-                        <div class="slide-text">
-                            <p>“But I must explain to you the how all this mistaken idea of thealorem qco denouncing pleasure”</p>
-                        </div>
-                    </article>
-
-                    <!--Slide-->
-                    <article class="slide-item">
-
-                        <div class="info-box">
-                            <figure class="image-box"><img src="<?php echo base_url();?>media/website_assets/images/resource/testi-image-3.jpg" alt=""></figure>
-                            <h3>Mark Pine</h3>
-                            <p class="designation">Rome, Italy</p>
-                        </div>
-
-                        <div class="slide-text">
-                            <p>“But I must explain to you the how all this mistaken idea of thealorem qco denouncing pleasure”</p>
-                        </div>
-                    </article>
-
-
-                </div>
-
-            </div>
-        </section>
-
-        
-<!-- &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&  -->
-
-    <!--====================summernote1 section start==================================================== -->
-    <?php if ($menu_p['sumernote1'] != 0 && !empty($summernote1)) : ?>
+  <!--=================summernote1 section start========================================== -->
+  <?php if ($menu_p['sumernote1'] != 0 && !empty($summernote1)) : ?>
         <div class="container" style="margin-top:75px; margin-bottom:55px;">
             <div class="text-justify"><?php echo $summernote1['content']; ?></div>
         </div>
     <?php endif; ?>
     <!--====================summernote1 section end==================================================== -->
 
-    
-    
+
+
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
+
+<section class="subscribe-intro">
+    <div class="auto-container">
+        <div class="row clearfix">
+<!-- --------------------------------------------------------------------- -->
+<div class="col-md-7">
+    <p><img src="<?php echo base_url();?>media/website_assets/web_img/img.png" alt="" style="padding-left:5rem;height:26rem;opacity:0.6;position:absolute;top:1.2rem;"></p>
+</div>
+
+<div class="col-md-5">
+
+    <div class="row">
+     <div class="row">
+            <div class="col-md-12" id="button_man" style="border:1px solid white;border-radius:0.5rem;background-color:#e5540c;padding:2rem;font-weight:600;">
+                <h4><i class="fa fa-sign-out"></i>&nbsp; Worldwide charity programs&nbsp;<span style="float:right;color:#cba06a;font-size:2rem;"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;</span></h4>
+            </div>
+
+        </div>
+        <div class="row box-text" style="display:none;">
+            <div class="col-md-12" style="background-color:rgba(255, 92, 11,0.4);padding:2rem;font-weight:600;">
+                <p style="font-weight:100;text-align:justify;color:black;">Worldwide charity programs focus on reducing poverty, enhancing education, and providing essential healthcare. These initiatives strive to uplift underprivileged communities, offering support and opportunities for a better future globally.
+                </p>
+               
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row"style="margin-top:2rem;">
+     <div class="row">
+            <div class="col-md-12" id="button_man_1" style="border:1px solid white;border-radius:0.5rem;background-color:#e5540c;padding:2rem;font-weight:600;">
+                <h4><i class="fa fa-sign-out"></i>&nbsp;Charity programs for children&nbsp;<span style="float:right;color:#cba06a;font-size:2rem;"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;</span></h4>
+            </div>
+
+        </div>
+        <div class="row box-text_1" style="display:none;">
+            <div class="col-md-12" style="background-color:rgba(255, 92, 11,0.4);padding:2rem;font-weight:600;">
+                <p style="font-weight:100;text-align:justify;padding:0rem 3rem;color:black;">Charity programs for children focus on education, healthcare, and basic necessities. These initiatives aim to uplift underprivileged kids, providing them with essential support and opportunities for a healthier, brighter, and more prosperous future.
+                </p>
+               
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row"style="margin-top:2rem;">
+     <div class="row">
+            <div class="col-md-12" id="button_man_2" style="border:1px solid white;border-radius:0.5rem;background-color:#e5540c;padding:2rem;font-weight:600;">
+                <h4><i class="fa fa-sign-out"></i>&nbsp;Online donation seystem &nbsp;<span style="float:right;color:#cba06a;font-size:2rem;"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;</span></h4>
+            </div>
+
+        </div>
+        <div class="row box-text_2" style="display:none;">
+            <div class="col-md-12" style="background-color:rgba(255, 92, 11,0.4);padding:2rem;font-weight:600;">
+                <p style="font-weight:100;text-align:justify;padding:0rem 3rem;color:black;">Online donation systems provide a convenient, secure way for individuals to contribute to charitable causes. These platforms facilitate quick transactions, enhance donor engagement, and ensure funds reach nonprofits efficiently, supporting impactful social change.
+                </p>
+               
+            </div>
+
+        </div>
+    </div>
+
+</div>
+<!-- --------------------------------------------------------------------- -->
+    </div>
+ </div>
+</section>
+   
+
+
 
     <!--====================summernote section start==================================================== -->
     <?php if ($menu_p['sumernote'] != 0 && !empty($summernote)) : ?>
         <div class="container">
             <div class="row">
-                <div class="col-md-8">
-                    <!-- <h3 style="text-align:center; background-color:#b6e0ff; margin-top:66px; padding:10px; color:#155992;"><b>Welcome to Raj Aryan Nursing & Paramedical College</b></h1> -->
-                <div class="text-justify"style="background-color:#e9fffe;"><?php echo $summernote['content']; ?></div>
-               
+                <div class="col-md-12">
+                <div class="text-justify"><?php echo $summernote['content']; ?></div>
                 </div>
+            </div>
+        </div>
+    <?php endif; ?>
+    <!--====================summernote section end==================================================== -->
 
-
-    <!--====================news section start==================================================== -->
-<div class="col-md-4" style=" margin-top:56px; padding:10px;">
+        <!--====================news section start==================================================== -->
+<div class="col-md-12" style=" margin-top:56px; padding:10px;">
 <?php if ($menu_p['news'] != 0 && !empty($news)) : ?>
     <h3 style="text-align:center;  padding:10px; color:rgb(194 34 30);background: linear-gradient(to right, #ffba75, #f9cc9e);"><b>Today News</b></h1>
         
@@ -433,11 +319,6 @@
 <?php endif; ?>
 </div>
     <!--====================news section end==================================================== -->
-
-            </div>
-        </div>
-    <?php endif; ?>
-    <!--====================summernote section end==================================================== -->
     
     <!--====================summernote2 section start==================================================== -->
 <section style="margin-top:44px;">
@@ -782,12 +663,60 @@
     <!--====================map section end==================================================== -->
 
 
+<!-- &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&  -->
+
+  <!--Intro Section-->
+  <section class="subscribe-intro">
+            <div class="auto-container">
+                <div class="row clearfix">
+                    <!--Column-->
+                    <div class="column col-md-9 col-sm-12 col-xs-12">
+                        <h2>Your Small Help Make World Better!</h2>
+                        Help us support their work – make a donation Teenage Cancer
+                    </div>
+                    <!--Column-->
+                    <div class="column col-md-3 col-sm-12 col-xs-12">
+                        <div class="text-right padd-top-20">
+                            <a href="#" class="theme-btn btn-style-one">Donate Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+<!-- &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&  -->
 
 
 
 
-
-
+<script>
+      
+      document.addEventListener("DOMContentLoaded", function() {
+    function toggleDisplay(buttonId, boxClass) {
+        document.getElementById(buttonId).addEventListener("click", function() {
+            var box = document.querySelector(boxClass);
+            if (box.style.display === "none") {
+                box.style.display = "block";
+            } else {
+                box.style.display = "none";
+            }
+        });
+    }
+    var buttonClassPairs = [
+        { buttonId: "button_man", boxClass: ".box-text" },
+        { buttonId: "button_man_1", boxClass: ".box-text_1" },
+        { buttonId: "button_man_2", boxClass: ".box-text_2" },
+        { buttonId: "button_man_3", boxClass: ".box-text_3" },
+        { buttonId: "button_man_4", boxClass: ".box-text_4" },
+        { buttonId: "button_man_5", boxClass: ".box-text_5" },
+        { buttonId: "button_man_6", boxClass: ".box-text_6" },
+    ];
+    buttonClassPairs.forEach(function(pair) {
+        toggleDisplay(pair.buttonId, pair.boxClass);
+    });
+});
+    </script>
 
 
     <?php include_once("include/footer.php") ?>
@@ -797,6 +726,23 @@
     </script>
 
     <script src="<?php echo base_url() . 'media/js/website/index.js' ?>"> </script>
+
+
+    <script>
+      
+ $("#button_man").click(function(){
+    $("#button_man_1").toggle();
+    $("#button_man_2").toggle();
+  });
+  $("#button_man_1").click(function(){
+    $("#button_man").toggle();
+    $("#button_man_2").toggle();
+  });
+  $("#button_man_2").click(function(){
+    $("#button_man").toggle();
+    $("#button_man_1").toggle();
+  });
+    </script>
 
 </body>
 

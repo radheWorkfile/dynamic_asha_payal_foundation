@@ -31,7 +31,7 @@
                     <?php foreach ($banner as $b => $ban) : ?>
                         <?php if ($a == 0) : ?>
                             <div class="carousel-item active">
-                                <img src="<?php echo base_url() . "uploads/banner/" . $ban['banner'] ?>" class="d-block w-100" alt="...">
+                                <img src="<?php echo base_url() . "uploads/banner/" . $ban['banner'] ?>" class="d-block w-100" alt="..." style="width:100%;">
 
                                 <?php if ($ban['banner_text']) : ?>
                                     <div class="carousel-caption d-none d-md-block  " style="text-align: center; top:25% ">
@@ -112,16 +112,17 @@
     <?php endif; ?>
     <!--====================news section end==================================================== -->
 
-
-    <!--====================about us section start==================================================== -->
+        <!--====================about us section start==================================================== -->
+        <section class="wow fadeInUp" data-wow-duration=".8s" data-wow-delay=".30s"style="margin-top:5rem;">
+<div class="container">
+    <div class="row">
     <?php if ($menu_p['about'] != 0 && !empty($about)) : ?>
         <div class="container col-xxl-8 px-4 py-5">
             <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-                <div class="col-10 col-sm-8 col-lg-6" style="margin-top:-55px;" >
-                    <img src="<?php echo base_url() . "uploads/image/" . $about['about_image']; ?>" class="d-block mx-lg-auto img-fluid" alt="<?php echo base_url() . "uploads/image/" . $about['about_image']; ?>" width="700" height="500" loading="lazy" style="border-radius:10px 100px 20px 10px; border:4px solid #F19411;">
-                </div>
-                <div class="col-lg-6" style="margin-top:-10px;" >
-                    <h2 class="display-5 fw-bold lh-1 mb-3"><?php echo $about['about_header']; ?></h1>
+               
+                <div class="col-lg-6" style="text-align:justify; margin-top:-10px; margin-bottom:-80px;font-weight:normal;">
+                    <h2 style="margin-top:1rem;"><b>Welcome To <span style="color:#ff5c0b;">Asha Payal</span> Foundation</b></h2>
+                    <h4 class="display-5 fw-bold lh-1 mb-3"style="margin-top:1rem;"><b><?php echo $about['about_header']; ?></b></h4>
                     <p class="lead"><?php echo $about['about_text']; ?></p>
 
                     <div class="d-grid gap-2 d-md-flex justify-content-md-start">
@@ -135,12 +136,29 @@
                         <?php endif; ?>
                     </div>
 
+                    <div class=""style="display:flex;">
+                     <p><span><i class="fa fa-bullseye"style="color:#ea9909;"></i>&nbsp;Charity For Education</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><i class="fa fa-bullseye"style="color:#ea9909;"></i>&nbsp;Feed for hungry child</span></p>
+                     </div>
+
+                     <div class=""style="display:flex;">
+                     <p><span><i class="fa fa-bullseye"style="color:#ea9909;"></i>&nbsp;Home for homeless</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><i class="fa fa-bullseye"style="color:#ea9909;"></i>&nbsp;Clean water for people</span></p>
+                     </div><br>
+
+                    <p class="wow tada"><a href="" class="btn-join" style="color:white;padding:12px 22px 12px 22px;color:white;border:3px solid #ea9909;">JOIN WITH US</a></p>
+
+                </div>
+                <div class="col-md-1"> </div>
+                <div class="col-md-5">
+                    <img src="<?php echo base_url() . "uploads/image/" . $about['about_image']; ?>" class="d-block mx-lg-auto img-fluid " alt="<?php echo base_url() . "uploads/image/" . $about['about_image']; ?>" width="700"  loading="lazy" style="height:38rem;width:100%;">
                 </div>
             </div>
         </div>
     <?php endif; ?>
+    </div>
+</div>
+</section>
 
-    <!--====================about us section end==================================================== -->
+ <!--====================about us section end==================================================== -->
 
 
          <!--====================hero section start==================================================== -->
@@ -265,26 +283,50 @@
 
     <!--====================testimonial section end==================================================== -->
 
-    <!--====================Gallery Section start==================================================== -->
-<section style="margin:55px 0px 55px 0px;">
-<?php if ($menu_p['gallery'] != 0) : ?>
-        <div class="container" >
-            <div class="row">
-                <h1 class="text-center">Gallery</h1>
 
+
+    <!--====================Gallery Section start==================================================== -->
+   <!--Gallery Section-->
+   <?php if ($menu_p['gallery'] != 0) : ?>
+
+    <section class="gallery-section"style="margin-top:-10rem;">
+        <div class="auto-container">
+            
+            <!--Filter-->
+            <div class="filters text-center">
+                <ul class="filter-tabs filter-btns clearfix anim-3-all">
+                    <li class="active filter" data-role="button" data-filter="all">All</li>
+                    <li class="filter" data-role="button" data-filter=".eco">Charity</li>
+                    <li class="filter" data-role="button" data-filter=".plants">Plants</li>
+                </ul>
+            </div>
+            
+            <!--Filter List-->
+            <div class="row filter-list clearfix">
+                <!--Column-->
                 <?php foreach ($gallery as $gallery) : ?>
-                    <div class="col-md-3">
-                        <div class="cad" style="width: 18rem;">
-                            <img src="<?php echo base_url() . "uploads/gallery/" . $gallery['image'] ?>" class="card-img-top" alt="..." style="border-radius:20px; padding:10px;">
+                <div class="column mix mix_all eco plants col-md-3 col-sm-6 col-xs-12">
+                    <!--Default Portfolio Item-->
+                    <div class="default-portfolio-item"style="border: 2px dotted #eb5310;">
+                        <div class="inner-box text-center">
+                            <!--Image Box-->
+                            <figure class="image-box"><img src="<?php echo base_url() . "uploads/gallery/" . $gallery['image'] ?>" alt=""></figure>
+                            <div class="overlay-box">
+                                <div class="inner-content">
+                                    <div class="content">
+                                        <a class="arrow lightbox-image" href="images/gallery/s1.jpg" title="Image Caption Here"><span class="icon flaticon-cross-4"></span></a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                </div>
                 <?php endforeach; ?>
-
             </div>
-
         </div>
+    </section>
     <?php endif; ?>
-</section>
+
 
     <!--====================Gallery Section end==================================================== -->
 
@@ -302,25 +344,38 @@
 
         <div class="container">
             <div class="row">
-                <div class="col-md-5" style="margin-top:80px; box-shadow: 20px 20px 50px 10px #f3a316 inset; height:340px; padding:55px; border-radius:10px;">
+                <div class="col-md-5" style="border:1px solid #d2d2d2;padding:6rem 6rem;">
                    
-                    <h2 style="">Our Address</h3>
-                    <h3><?php echo $company['company_name']; ?></h3>
-                    <p><?php echo $company['company_address']; ?></p>
+                    <h2 style="color:#ff5200 ;"><b>Our Address</b></h3>
+                    <p style="text-align:justify;">Reach out to the Asha Payal Foundation for support, collaboration, or inquiries. Contact us via email, phone, or visit our website. We’re here to assist and make a positive impact together.</p><br>
+                    <h3><b><?php echo $company['company_name']; ?></b></h3><br>
+                  
+
+                    <div class="" style="display:flex;">
+                      <p class="mb-2"> <i class="fa fa-phone"style="font-size: 6rem;color:#eabda1;"></i></p>
+                      <p style="padding-left:2rem;"><b style="color:#ff5200;">Address</b> <br>&nbsp;<?php echo $company['company_address']; ?></p>
+                    </div>
 
 
                     <?php foreach ($contact1 as  $contact1) : ?>
-                        <p class="mb-2"> <i class="fa fa-phone"></i>&nbsp;<?php echo $contact1; ?></p>
+                      <div class="" style="display:flex">
+                      <p class="mb-2"> <i class="fa fa-phone"style="font-size: 6rem;color:#eabda1;"></i></p>
+                      <p style="padding-left:2rem;"><b style="color:#ff5200;">Phone</b> <br>&nbsp;<?php echo $contact1; ?></p>
+                      </div>
                     <?php endforeach; ?>
 
+                    
                     <?php foreach ($email1 as  $email1) : ?>
-                        <p class="mb-2"> <i class="fa fa-envelope"></i>&nbsp;<?php echo $email1; ?></p>
+                      <div class="" style="display:flex">
+                      <p class="mb-2"> <i class="fa fa-envelope"style="font-size: 5rem;color:#eabda1;"></i></p>
+                      <p style="padding-left:2rem;"><b style="color:#ff5200;">Email Id</b> <br>&nbsp;<?php echo $email1; ?></p>
+                      </div>
                     <?php endforeach; ?>
-
 
                 </div>
+                
                 <div class="col-md-1"></div>
-                <div class="col-md-6" style="margin-top:55px; border-radius:20px;  box-shadow: 20px 20px 50px 10px #f3a316 inset;padding:55px;">
+                <div class="col-md-6"style="border:1px solid #d2d2d2;padding:7.4rem 6rem;">
                     <h2> Contact Us</h3>
                   
                     <form class="contact_form" method="post">
@@ -346,8 +401,7 @@
                             <label for="exampleFormControlInput1" class="form-label">Message</label><br>
                             <textarea name="message" class="form-control" id="" cols="70" rows="2"></textarea>
                         </div>
-                        <div class="mb-3">
-
+                        <div class="mb-3"style="margin-top:2rem;">
                             <input type="submit" name="submit" class="form-control btn btn-danger" style="background-color:#ff5200 !important; border: 2px solid #ff5200!important;">
                         </div>
 
@@ -496,6 +550,30 @@
 
 
 
+
+<!-- &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&  -->
+
+  <!--Intro Section-->
+  <section class="subscribe-intro">
+            <div class="auto-container">
+                <div class="row clearfix">
+                    <!--Column-->
+                    <div class="column col-md-9 col-sm-12 col-xs-12">
+                        <h2>Your Small Help Make World Better!</h2>
+                        Help us support their work – make a donation Teenage Cancer
+                    </div>
+                    <!--Column-->
+                    <div class="column col-md-3 col-sm-12 col-xs-12">
+                        <div class="text-right padd-top-20">
+                            <a href="#" class="theme-btn btn-style-one">Donate Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+<!-- &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&  -->
 
 
 
